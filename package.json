@@ -1,0 +1,131 @@
+{
+  "name": "my-react-redux-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "case-sensitive-paths-webpack-plugin": "2.1.1",
+    "chalk": "1.1.3",
+    "dotenv": "4.0.0",
+    "dotenv-expand": "4.2.0",
+    "emotion": "^9.2.12",
+    "emotion-theming": "^9.2.9",
+    "extract-text-webpack-plugin": "3.0.2",
+    "fs-extra": "3.0.1",
+    "html-webpack-plugin": "2.29.0",
+    "object-assign": "4.1.1",
+    "postcss-flexbugs-fixes": "3.2.0",
+    "promise": "8.0.1",
+    "raf": "3.4.0",
+    "react": "^16.6.3",
+    "react-dev-utils": "^5.0.1",
+    "react-dom": "^16.4.2",
+    "react-emotion": "^9.2.12",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-localstorage": "^0.4.1",
+    "redux-thunk": "^2.3.0",
+    "resolve": "1.6.0",
+    "sw-precache-webpack-plugin": "0.11.4",
+    "tslib": "^1.7.1",
+    "typescript": "^3.0.1",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.14",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
+    "@types/jest": "^21.1.5",
+    "@types/jest-image-snapshot": "^2.4.0",
+    "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.9",
+    "autoprefixer": "7.1.6",
+    "babel-core": "6.26.0",
+    "babel-eslint": "7.2.3",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "7.1.2",
+    "babel-preset-react-app": "^3.1.1",
+    "babel-runtime": "6.26.0",
+    "css-loader": "0.28.7",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-to-json": "^3.2.2",
+    "eslint": "^5.4.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-flowtype": "2.39.1",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jest": "^21.22.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "file-loader": "1.1.5",
+    "jest": "^23.6.0",
+    "jest-emotion": "^9.2.7",
+    "jest-enzyme": "^6.0.4",
+    "jest-image-snapshot": "^2.3.0",
+    "postcss-loader": "2.0.8",
+    "style-loader": "0.19.0",
+    "ts-jest": "^23.1.4",
+    "ts-loader": "^2.3.3",
+    "tslint": "^5.11.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^3.6.0",
+    "url-loader": "0.6.2",
+    "webpack": "3.8.1",
+    "webpack-dev-server": "2.9.4",
+    "webpack-manifest-plugin": "1.3.2"
+  },
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "./node_modules/.bin/jest --testMatch **/src/**/*.test.{ts,tsx} --coverage",
+    "test2": "node scripts/test.js --env=jsdom"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "setupFiles": [
+      "<rootDir>/setup-jest.js"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "src/tsconfig.build.json"
+      }
+    },
+    "coverageReporters": [
+      "html",
+      "text-summary"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 80,
+        "statements": 80
+      }
+    }
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}

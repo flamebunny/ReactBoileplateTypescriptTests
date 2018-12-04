@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Movies component When rendered Matches the snapshot 1`] = `
+<Component
+  fetching={false}
+  movies={
+    Array [
+      Object {
+        "id": 1,
+        "releaseYear": 1977,
+        "title": "Star Wars",
+      },
+      Object {
+        "id": 2,
+        "releaseYear": 1985,
+        "title": "Back to the Future",
+      },
+      Object {
+        "id": 3,
+        "releaseYear": 1999,
+        "title": "The Matrix",
+      },
+      Object {
+        "id": 4,
+        "releaseYear": 2010,
+        "title": "Inception",
+      },
+      Object {
+        "id": 5,
+        "releaseYear": 2014,
+        "title": "Interstellar",
+      },
+    ]
+  }
+>
+  <div>
+    <Component
+      id={1}
+      key="1"
+      releaseYear={1977}
+      title="Star Wars"
+    >
+      <div>
+        Movie: 
+        Star Wars
+         (
+        1977
+        )
+      </div>
+    </Component>
+    <Component
+      id={2}
+      key="2"
+      releaseYear={1985}
+      title="Back to the Future"
+    >
+      <div>
+        Movie: 
+        Back to the Future
+         (
+        1985
+        )
+      </div>
+    </Component>
+    <Component
+      id={3}
+      key="3"
+      releaseYear={1999}
+      title="The Matrix"
+    >
+      <div>
+        Movie: 
+        The Matrix
+         (
+        1999
+        )
+      </div>
+    </Component>
+    <Component
+      id={4}
+      key="4"
+      releaseYear={2010}
+      title="Inception"
+    >
+      <div>
+        Movie: 
+        Inception
+         (
+        2010
+        )
+      </div>
+    </Component>
+    <Component
+      id={5}
+      key="5"
+      releaseYear={2014}
+      title="Interstellar"
+    >
+      <div>
+        Movie: 
+        Interstellar
+         (
+        2014
+        )
+      </div>
+    </Component>
+  </div>
+</Component>
+`;

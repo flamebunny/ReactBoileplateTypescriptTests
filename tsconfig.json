@@ -1,0 +1,40 @@
+﻿{
+  "compilerOptions": {
+    "target": "es5",
+    "rootDir": ".",
+    "module": "amd",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "lib": [ "dom", "es2015", "es2015.promise", "es2016.array.include" ],
+    "noFallthroughCasesInSwitch": true,
+    "noEmitOnError": true,
+    "noImplicitReturns": true,
+    "removeComments": true,
+    "importHelpers":  true,
+    "jsx": "react",
+
+    // the following flags are aspiration and cannot be enabled yet without breaking compilation
+    //"noImplicitAny": true,
+    //"noImplicitThis":  true,
+    //"noUnusedLocals":  true,
+    //"noUnusedParameters":  true,
+    "strictNullChecks": true,
+
+    // required for inversify IOC
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    // don't type check *.d.ts files to prevent conflicts with mocha and jest `describe`, `it`, `beforeEach`, etc.
+    "skipLibCheck": true,
+
+    "baseUrl": ".",
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.jspec*",
+    "**/__mocks__/*",
+    "**/*.spec*",
+    "_static",
+  ],
+  "compileOnSave": false
+}
