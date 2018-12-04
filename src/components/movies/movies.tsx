@@ -7,7 +7,6 @@ export const Movies = ({ fetching, movies }) => {
   return (
     <div>
       {fetching && <LoadingStyled>Loading Movies</LoadingStyled>}
-      Awesome
       {movies && movies.map(movie => <Movie key={movie.id} {...movie} />)}
     </div>
   )
